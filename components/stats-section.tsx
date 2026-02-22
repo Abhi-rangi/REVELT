@@ -13,7 +13,7 @@ export function StatsSection() {
           <span className="text-xs font-semibold uppercase tracking-widest text-teal">
             Proven Results
           </span>
-          <h2 className="mt-3 font-serif text-2xl sm:text-3xl font-bold tracking-tight text-background md:text-4xl text-balance">
+          <h2 className="mt-3 font-serif text-2xl sm:text-3xl font-bold tracking-tight text-[#F0F4F5] md:text-4xl text-balance">
             Numbers that speak for themselves
           </h2>
         </div>
@@ -27,10 +27,10 @@ export function StatsSection() {
               <span className="font-serif text-3xl sm:text-5xl font-bold text-teal">
                 {s.value}
               </span>
-              <span className="mt-2 sm:mt-3 text-xs sm:text-sm font-semibold text-background">
+              <span className="mt-2 sm:mt-3 text-xs sm:text-sm font-semibold text-[#F0F4F5]">
                 {s.label}
               </span>
-              <span className="mt-1 text-[11px] sm:text-xs text-background/60">{s.sub}</span>
+              <span className="mt-1 text-[11px] sm:text-xs text-[#F0F4F5]/80">{s.sub}</span>
             </div>
           ))}
         </div>

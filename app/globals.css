@@ -4,32 +4,32 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Primary Navy — core background and primary brand color */
-  --background: #1D2635;
-  /* Neutral White — body text and contrast on dark backgrounds */
-  --foreground: #F0F4F5;
-  /* Cards — slightly elevated navy */
-  --card: #252f3f;
-  --card-foreground: #F0F4F5;
-  --popover: #252f3f;
-  --popover-foreground: #F0F4F5;
+  /* Main page background — white */
+  --background: #ffffff;
+  /* Primary Navy — body text and headlines on white */
+  --foreground: #1D2635;
+  /* Cards — light gray on white */
+  --card: #F8FAFC;
+  --card-foreground: #1D2635;
+  --popover: #ffffff;
+  --popover-foreground: #1D2635;
   /* Action Blue — primary accent (gradient start) */
   --primary: #0070F0;
   --primary-foreground: #F0F4F5;
   /* Secondary surface */
-  --secondary: #2a3548;
-  --secondary-foreground: #F0F4F5;
+  --secondary: #F1F5F9;
+  --secondary-foreground: #1D2635;
   /* Muted surface + text */
-  --muted: #2a3548;
-  --muted-foreground: #94a3b8;
+  --muted: #F1F5F9;
+  --muted-foreground: #64748b;
   /* Action Blue gradient end — accents, highlights */
   --accent: #10BBEA;
   --accent-foreground: #F0F4F5;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #F0F4F5;
-  /* Border — subtle on navy */
-  --border: #334155;
-  --input: #334155;
+  /* Border — light theme */
+  --border: #e2e8f0;
+  --input: #e2e8f0;
   --ring: #0070F0;
   --chart-1: #0070F0;
   --chart-2: #10BBEA;
@@ -39,19 +39,19 @@
   --radius: 0.625rem;
   /* Action Blue gradient end — used with primary for gradients */
   --teal: #10BBEA;
-  /* Primary Navy (explicit tokens) */
+  /* Primary Navy (for dark sections / contrast) */
   --navy: #1D2635;
   --navy-light: #252f3f;
   /* Action Blue gradient */
   --gradient-action-start: #0070F0;
   --gradient-action-end: #10BBEA;
-  --sidebar: #252f3f;
-  --sidebar-foreground: #F0F4F5;
+  --sidebar: #F8FAFC;
+  --sidebar-foreground: #1D2635;
   --sidebar-primary: #0070F0;
   --sidebar-primary-foreground: #F0F4F5;
-  --sidebar-accent: #2a3548;
-  --sidebar-accent-foreground: #F0F4F5;
-  --sidebar-border: #334155;
+  --sidebar-accent: #F1F5F9;
+  --sidebar-accent-foreground: #1D2635;
+  --sidebar-border: #e2e8f0;
   --sidebar-ring: #0070F0;
 }
 
