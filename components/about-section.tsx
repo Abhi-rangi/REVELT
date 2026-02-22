@@ -2,7 +2,7 @@ import { Check, X, Shield } from "lucide-react";
 
 const goodFit = [
   "Want more booked appointments",
-  "Care about patient experience",
+  "Care about client experience",
   "Value your time",
   "Want predictable growth",
 ];
@@ -25,7 +25,7 @@ export function AboutSection() {
             Helping Businesses Build Businesses That Keep Working
           </h2>
           <p className="mt-4 text-base sm:text-lg leading-relaxed text-muted-foreground text-pretty">
-            Running a business is demanding — patients, staff, marketing,
+            Running a business is demanding — clients, staff, marketing,
             scheduling, follow-ups — all while trying to grow.
           </p>
         </div>

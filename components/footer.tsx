@@ -12,8 +12,7 @@ export function Footer() {
             REVELT
           </a>
           <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
-            Instant replies. Smart follow-ups. More booked patients. Less
-            stress.
+            Instant replies. Smart follow-ups. More booked clients. Less stress.
           </p>
           <div className="flex items-center gap-6 text-xs text-muted-foreground">
             <a href="#" className="transition-colors hover:text-foreground">

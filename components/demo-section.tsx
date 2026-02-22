@@ -41,7 +41,7 @@ export function DemoSection() {
             </Badge>
 
             <h2 className="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl text-balance">
-              Ready to book more patients in{" "}
+              Ready to book more clients in{" "}
               <span className="text-teal">14 days or less?</span>
             </h2>
 

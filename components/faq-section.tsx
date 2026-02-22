@@ -23,11 +23,11 @@ const faqs = [
   },
   {
     q: "Will this replace my front desk staff?",
-    a: "No. REVELT supports your team — it doesn't replace them. We handle repetitive tasks so your staff can focus on patients.",
+    a: "No. REVELT supports your team — it doesn't replace them. We handle repetitive tasks so your staff can focus on clients.",
   },
   {
     q: "What happens if someone wants to talk to a real person?",
-    a: "They still can. REVELT routes patients to your staff whenever needed. You stay in control.",
+    a: "They still can. REVELT routes clients to your staff whenever needed. You stay in control.",
   },
   {
     q: "How much does it cost?",

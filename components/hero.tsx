@@ -27,13 +27,13 @@ export function Hero() {
           <h1 className="text-balance font-serif text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
             AI-powered systems that{" "}
             <span className="text-teal">capture, convert,</span> and book more
-            patients automatically.
+            clients automatically.
           </h1>
 
           <p className="mx-auto mt-4 sm:mt-6 max-w-2xl text-pretty text-base sm:text-lg leading-relaxed text-muted-foreground">
-            Ensure your business never misses another opportunity. REVELT handles
-            every inquiry, follow-up, and booking — so your team can focus on
-            delivering exceptional care.
+            Ensure your business never misses another opportunity. REVELT
+            handles every inquiry, follow-up, and booking — so your team can
+            focus on delivering exceptional care.
           </p>
 
           <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">

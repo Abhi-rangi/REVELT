@@ -4,12 +4,12 @@ const painPoints = [
   {
     icon: PhoneOff,
     title: "Unanswered Calls",
-    desc: "Every missed call is a lost patient. Studies show 85% of callers who can't reach you will not call back.",
+    desc: "Every missed call is a lost client. Studies show 85% of callers who can't reach you will not call back.",
   },
   {
     icon: MessageSquareOff,
     title: "Ignored DMs & Inquiries",
-    desc: "Potential patients message on Instagram, Facebook, and SMS — and hear nothing back for hours or days.",
+    desc: "Potential clients message on Instagram, Facebook, and SMS — and hear nothing back for hours or days.",
   },
   {
     icon: UserX,
@@ -47,7 +47,7 @@ const comparisonRows = [
   {
     area: "Staff Workload",
     without: "Overwhelmed, burning out",
-    withR: "Focused on patient care, not admin",
+    withR: "Focused on client care, not admin",
   },
   {
     area: "Revenue",
@@ -70,8 +70,8 @@ export function ProblemSection() {
           </h2>
           <p className="mt-4 text-base sm:text-lg leading-relaxed text-muted-foreground text-pretty">
             Overworked staff, missed calls, and slow follow-ups are silently
-            draining your bookings. The patients are out there — they{"'"}re
-            just not hearing back from you fast enough.
+            draining your bookings. The clients are out there — they{"'"}re just
+            not hearing back from you fast enough.
           </p>
         </div>
 

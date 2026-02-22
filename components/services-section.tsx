@@ -16,20 +16,20 @@ const services = [
   {
     icon: Calendar,
     title: "Appointment Booking Automation",
-    desc: "Patients self-book directly into your calendar through AI-guided conversations. No back-and-forth, no phone tag.",
+    desc: "Clients self-book directly into your calendar through AI-guided conversations. No back-and-forth, no phone tag.",
     stat: "Zero scheduling friction",
   },
   {
     icon: BellRing,
     title: "No-Show Reduction",
-    desc: "One-click confirmation reminders via SMS and email. Patients confirm, reschedule, or cancel — all automatically.",
+    desc: "One-click confirmation reminders via SMS and email. clients confirm, reschedule, or cancel — all automatically.",
     stat: "Up to 60% fewer no-shows",
   },
   {
     icon: UserCheck,
-    title: "Patient Reactivation",
-    desc: "Automatically re-engage dormant patients with personalized outreach.",
-    stat: "Reactivate past patients",
+    title: "Client Reactivation",
+    desc: "Automatically re-engage dormant clients with personalized outreach.",
+    stat: "Reactivate past clients",
   },
 ];
 
@@ -47,7 +47,7 @@ export function ServicesSection() {
           </h2>
           <p className="mt-4 text-base sm:text-lg leading-relaxed text-muted-foreground text-pretty">
             REVELT is a complete AI automation system — not just a chatbot.
-            Every touchpoint in the patient journey is handled automatically.
+            Every touchpoint in the client journey is handled automatically.
           </p>
         </div>
 

@@ -4,52 +4,55 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Off-white page background */
-  --background: oklch(0.98 0.004 250);
-  /* Navy — headlines, dark text */
-  --foreground: oklch(0.25 0.04 250);
-  /* Light gray — cards, secondary surfaces */
-  --card: oklch(0.96 0.008 250);
-  --card-foreground: oklch(0.25 0.04 250);
-  --popover: oklch(0.98 0.004 250);
-  --popover-foreground: oklch(0.25 0.04 250);
-  /* Blue — primary buttons, borders, focus ring */
-  --primary: oklch(0.50 0.15 240);
-  --primary-foreground: oklch(0.98 0.004 250);
-  /* Navy-light secondary surface */
-  --secondary: oklch(0.96 0.008 250);
-  --secondary-foreground: oklch(0.25 0.04 250);
+  /* Primary Navy — core background and primary brand color */
+  --background: #1D2635;
+  /* Neutral White — body text and contrast on dark backgrounds */
+  --foreground: #F0F4F5;
+  /* Cards — slightly elevated navy */
+  --card: #252f3f;
+  --card-foreground: #F0F4F5;
+  --popover: #252f3f;
+  --popover-foreground: #F0F4F5;
+  /* Action Blue — primary accent (gradient start) */
+  --primary: #0070F0;
+  --primary-foreground: #F0F4F5;
+  /* Secondary surface */
+  --secondary: #2a3548;
+  --secondary-foreground: #F0F4F5;
   /* Muted surface + text */
-  --muted: oklch(0.96 0.008 250);
-  --muted-foreground: oklch(0.45 0.03 250);
-  /* Teal — accents, highlights, stats, eyebrow labels */
-  --accent: oklch(0.55 0.12 195);
-  --accent-foreground: oklch(0.98 0.004 250);
+  --muted: #2a3548;
+  --muted-foreground: #94a3b8;
+  /* Action Blue gradient end — accents, highlights */
+  --accent: #10BBEA;
+  --accent-foreground: #F0F4F5;
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.98 0.004 250);
-  /* Border — borders and form inputs */
-  --border: oklch(0.90 0.012 250);
-  --input: oklch(0.90 0.012 250);
-  --ring: oklch(0.50 0.15 240);
-  --chart-1: oklch(0.50 0.15 240);
-  --chart-2: oklch(0.55 0.12 195);
+  --destructive-foreground: #F0F4F5;
+  /* Border — subtle on navy */
+  --border: #334155;
+  --input: #334155;
+  --ring: #0070F0;
+  --chart-1: #0070F0;
+  --chart-2: #10BBEA;
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.625rem;
-  /* Teal accent */
-  --teal: oklch(0.55 0.12 195);
-  /* Navy dark — for dark sections like stats & footer */
-  --navy: oklch(0.25 0.04 250);
-  --navy-light: oklch(0.35 0.05 250);
-  --sidebar: oklch(0.96 0.008 250);
-  --sidebar-foreground: oklch(0.25 0.04 250);
-  --sidebar-primary: oklch(0.50 0.15 240);
-  --sidebar-primary-foreground: oklch(0.98 0.004 250);
-  --sidebar-accent: oklch(0.96 0.008 250);
-  --sidebar-accent-foreground: oklch(0.25 0.04 250);
-  --sidebar-border: oklch(0.90 0.012 250);
-  --sidebar-ring: oklch(0.50 0.15 240);
+  /* Action Blue gradient end — used with primary for gradients */
+  --teal: #10BBEA;
+  /* Primary Navy (explicit tokens) */
+  --navy: #1D2635;
+  --navy-light: #252f3f;
+  /* Action Blue gradient */
+  --gradient-action-start: #0070F0;
+  --gradient-action-end: #10BBEA;
+  --sidebar: #252f3f;
+  --sidebar-foreground: #F0F4F5;
+  --sidebar-primary: #0070F0;
+  --sidebar-primary-foreground: #F0F4F5;
+  --sidebar-accent: #2a3548;
+  --sidebar-accent-foreground: #F0F4F5;
+  --sidebar-border: #334155;
+  --sidebar-ring: #0070F0;
 }
 
 @theme inline {
@@ -106,5 +109,12 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Action Blue gradient — use with bg-gradient-action */
+@layer utilities {
+  .bg-gradient-action {
+    background: linear-gradient(to right, var(--gradient-action-start), var(--gradient-action-end));
   }
 }
