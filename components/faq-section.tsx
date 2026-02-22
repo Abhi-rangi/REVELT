@@ -1,21 +1,21 @@
-"use client"
+"use client";
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
-import { Button } from "@/components/ui/button"
+} from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
 
 const faqs = [
   {
     q: "How quickly can I get started?",
-    a: "Most med spas are fully set up within 7-14 days. Your total time commitment is under 60 minutes. We handle setup, testing, and optimization.",
+    a: "Most businesses are fully set up within 7-14 days. Your total time commitment is under 60 minutes. We handle setup, testing, and optimization.",
   },
   {
     q: "Do I need to change my current systems?",
-    a: "No. Revelt works with your existing phone system, website, and booking software. We integrate everything for you.",
+    a: "No. REVELT works with your existing phone system, website, and booking software. We integrate everything for you.",
   },
   {
     q: "Is this complicated for my staff?",
@@ -23,11 +23,11 @@ const faqs = [
   },
   {
     q: "Will this replace my front desk staff?",
-    a: "No. Revelt supports your team — it doesn't replace them. We handle repetitive tasks so your staff can focus on patients.",
+    a: "No. REVELT supports your team — it doesn't replace them. We handle repetitive tasks so your staff can focus on patients.",
   },
   {
     q: "What happens if someone wants to talk to a real person?",
-    a: "They still can. Revelt routes patients to your staff whenever needed. You stay in control.",
+    a: "They still can. REVELT routes patients to your staff whenever needed. You stay in control.",
   },
   {
     q: "How much does it cost?",
@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "Can this work for multiple locations?",
-    a: "Yes. Revelt supports multi-location med spas. We can manage everything from one dashboard.",
+    a: "Yes. REVELT supports multi-location businesses. We can manage everything from one dashboard.",
   },
   {
     q: "What does onboarding look like?",
@@ -66,10 +66,10 @@ const faqs = [
     a: "Yes. No lock-in. No hidden fees. No pressure.",
   },
   {
-    q: "How is Revelt different from marketing agencies?",
-    a: "Agencies focus on ads and traffic. Revelt focuses on conversions and bookings. We help you make more money from leads you already have.",
+    q: "How is REVELT different from marketing agencies?",
+    a: "Agencies focus on ads and traffic. REVELT focuses on conversions and bookings. We help you make more money from leads you already have.",
   },
-]
+];
 
 export function FaqSection() {
   return (
@@ -102,7 +102,7 @@ export function FaqSection() {
             Ready to See It in Action?
           </h3>
           <p className="mt-2 text-sm text-muted-foreground">
-            Book your free demo and see how Revelt works for your med spa.
+            Book your free demo and see how REVELT works for your business.
           </p>
           <Button className="mt-5" size="lg" asChild>
             <a href="#demo">Schedule Your Free Demo</a>
@@ -110,5 +110,5 @@ export function FaqSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

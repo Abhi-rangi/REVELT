@@ -1,13 +1,13 @@
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Bot, CalendarCheck, PhoneOff, BellOff } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Bot, CalendarCheck, PhoneOff, BellOff } from "lucide-react";
 
 const benefits = [
   { icon: Bot, text: "Instant responses — 24/7" },
   { icon: CalendarCheck, text: "Automated appointment booking" },
   { icon: PhoneOff, text: "Zero missed calls or DMs" },
   { icon: BellOff, text: "Dramatically fewer no-shows" },
-]
+];
 
 export function Hero() {
   return (
@@ -21,17 +21,17 @@ export function Hero() {
             variant="outline"
             className="mb-4 sm:mb-6 border-teal/30 bg-teal/10 text-teal px-3 py-1 sm:px-4 sm:py-1.5 text-xs font-medium"
           >
-            AI-Powered Med Spa Automation
+            AI-Powered Business Automation
           </Badge>
 
           <h1 className="text-balance font-serif text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
             AI-powered systems that{" "}
-            <span className="text-teal">capture, convert,</span> and book
-            more patients automatically.
+            <span className="text-teal">capture, convert,</span> and book more
+            patients automatically.
           </h1>
 
           <p className="mx-auto mt-4 sm:mt-6 max-w-2xl text-pretty text-base sm:text-lg leading-relaxed text-muted-foreground">
-            Ensure your med spa never misses another opportunity. Revelt handles
+            Ensure your business never misses another opportunity. REVELT handles
             every inquiry, follow-up, and booking — so your team can focus on
             delivering exceptional care.
           </p>
@@ -40,7 +40,12 @@ export function Hero() {
             {/* <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-primary to-teal text-background hover:opacity-90 border-0" asChild>
               <a href="#signup">Get More Bookings</a>
             </Button> */}
-            <Button size="lg" variant="outline" className="w-full sm:w-auto" asChild>
+            <Button
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto"
+              asChild
+            >
               <a href="#demo">Book a Demo</a>
             </Button>
           </div>
@@ -70,15 +75,23 @@ export function Hero() {
         {/* Floating stat cards */}
         <div className="mx-auto mt-8 sm:mt-10 flex max-w-md flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
           <div className="flex items-center gap-2 sm:gap-3 rounded-full border border-teal/20 bg-card px-4 py-2 sm:px-5 sm:py-2.5">
-            <span className="text-xs sm:text-sm font-semibold text-teal">This Week</span>
-            <span className="text-xs sm:text-sm font-bold text-foreground">+23 Bookings</span>
+            <span className="text-xs sm:text-sm font-semibold text-teal">
+              This Week
+            </span>
+            <span className="text-xs sm:text-sm font-bold text-foreground">
+              +23 Bookings
+            </span>
           </div>
           <div className="flex items-center gap-2 sm:gap-3 rounded-full border border-teal/20 bg-card px-4 py-2 sm:px-5 sm:py-2.5">
-            <span className="text-xs sm:text-sm font-semibold text-teal">Response Time</span>
-            <span className="text-xs sm:text-sm font-bold text-foreground">{"< 30 seconds"}</span>
+            <span className="text-xs sm:text-sm font-semibold text-teal">
+              Response Time
+            </span>
+            <span className="text-xs sm:text-sm font-bold text-foreground">
+              {"< 30 seconds"}
+            </span>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

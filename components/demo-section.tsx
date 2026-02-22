@@ -1,30 +1,30 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Badge } from "@/components/ui/badge"
-import { Check } from "lucide-react"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Badge } from "@/components/ui/badge";
+import { Check } from "lucide-react";
 
 const demoPoints = [
   "No pressure, no obligation — ever",
-  "See exactly how Revelt works for your spa",
+  "See exactly how REVELT works for your spa",
   "Learn your potential revenue recovery",
-]
+];
 
 export function DemoSection() {
-  const [submitted, setSubmitted] = useState(false)
+  const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     spaName: "",
     name: "",
     email: "",
     phone: "",
-  })
+  });
 
   function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    setSubmitted(true)
+    e.preventDefault();
+    setSubmitted(true);
   }
 
   return (
@@ -46,8 +46,8 @@ export function DemoSection() {
             </h2>
 
             <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-relaxed text-muted-foreground text-pretty">
-              Schedule your free demo today. In 20 minutes, you{"'"}ll see exactly
-              how Revelt can transform your booking process — with zero
+              Schedule your free demo today. In 20 minutes, you{"'"}ll see
+              exactly how REVELT can transform your booking process — with zero
               obligation to move forward.
             </p>
 
@@ -78,8 +78,11 @@ export function DemoSection() {
                   className="mt-6 flex flex-col gap-5"
                 >
                   <div className="flex flex-col gap-2">
-                    <Label htmlFor="spaName" className="text-sm text-muted-foreground">
-                      Med Spa Name
+                    <Label
+                      htmlFor="spaName"
+                      className="text-sm text-muted-foreground"
+                    >
+                      Business Name
                     </Label>
                     <Input
                       id="spaName"
@@ -87,12 +90,15 @@ export function DemoSection() {
                       onChange={(e) =>
                         setFormData({ ...formData, spaName: e.target.value })
                       }
-                      placeholder="Your med spa name"
+                      placeholder="Your business name"
                       className="bg-background"
                     />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <Label htmlFor="name" className="text-sm text-muted-foreground">
+                    <Label
+                      htmlFor="name"
+                      className="text-sm text-muted-foreground"
+                    >
                       Your Name *
                     </Label>
                     <Input
@@ -107,7 +113,10 @@ export function DemoSection() {
                     />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <Label htmlFor="email" className="text-sm text-muted-foreground">
+                    <Label
+                      htmlFor="email"
+                      className="text-sm text-muted-foreground"
+                    >
                       Email *
                     </Label>
                     <Input
@@ -123,7 +132,10 @@ export function DemoSection() {
                     />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <Label htmlFor="phone" className="text-sm text-muted-foreground">
+                    <Label
+                      htmlFor="phone"
+                      className="text-sm text-muted-foreground"
+                    >
                       Phone
                     </Label>
                     <Input
@@ -137,7 +149,11 @@ export function DemoSection() {
                       className="bg-background"
                     />
                   </div>
-                  <Button type="submit" size="lg" className="mt-2 w-full bg-gradient-to-r from-primary to-teal text-background hover:opacity-90 border-0">
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="mt-2 w-full bg-gradient-to-r from-primary to-teal text-background hover:opacity-90 border-0"
+                  >
                     Schedule Your Free Demo
                   </Button>
                 </form>
@@ -151,8 +167,8 @@ export function DemoSection() {
                   You{"'"}re on the list!
                 </h3>
                 <p className="mt-3 text-sm text-muted-foreground">
-                  Thank you, {formData.name || "there"}. We{"'"}ll reach out within
-                  24 hours to schedule your free demo. Check your inbox
+                  Thank you, {formData.name || "there"}. We{"'"}ll reach out
+                  within 24 hours to schedule your free demo. Check your inbox
                   {formData.email && (
                     <>
                       {" "}
@@ -170,5 +186,5 @@ export function DemoSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

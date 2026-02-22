@@ -1,24 +1,27 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Results", href: "#results" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-]
+];
 
 export function Navbar() {
-  const [mobileOpen, setMobileOpen] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
-        <a href="#" className="text-xl font-bold tracking-tight text-foreground">
-          Revelt
+        <a
+          href="#"
+          className="text-xl font-bold tracking-tight text-foreground"
+        >
+          REVELT
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -47,7 +50,11 @@ export function Navbar() {
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
-          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {mobileOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
         </button>
       </div>
 
@@ -67,7 +74,9 @@ export function Navbar() {
           </nav>
           <div className="mt-6 flex flex-col gap-3">
             <Button variant="ghost" size="sm" asChild>
-              <a href="#demo" onClick={() => setMobileOpen(false)}>Book a Demo</a>
+              <a href="#demo" onClick={() => setMobileOpen(false)}>
+                Book a Demo
+              </a>
             </Button>
             {/* <Button size="sm" asChild>
               <a href="#signup" onClick={() => setMobileOpen(false)}>Get More Bookings</a>
@@ -76,5 +85,5 @@ export function Navbar() {
         </div>
       )}
     </header>
-  )
+  );
 }

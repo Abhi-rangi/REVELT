@@ -3,7 +3,7 @@ const steps = [
     day: "Day 1",
     time: "20 min",
     title: "Discovery Demo",
-    desc: "A quick 20-minute call to understand your med spa's workflow, goals, and current booking process. No pressure, no obligation.",
+    desc: "A quick 20-minute call to understand your business's workflow, goals, and current booking process. No pressure, no obligation.",
   },
   {
     day: "Day 2",

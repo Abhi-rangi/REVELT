@@ -14,9 +14,9 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Revelt | AI-Powered Med Spa Booking Automation',
+  title: 'REVELT | AI-Powered Business Booking Automation',
   description:
-    'AI-powered systems that capture, convert, and book more patients automatically. Ensure your med spa never misses another opportunity.',
+    'AI-powered systems that capture, convert, and book more patients automatically. Ensure your business never misses another opportunity.',
   generator: 'v0.app',
 }
 

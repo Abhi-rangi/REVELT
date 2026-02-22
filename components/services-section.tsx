@@ -1,4 +1,4 @@
-import { Zap, MailCheck, Calendar, BellRing, UserCheck } from "lucide-react"
+import { Zap, MailCheck, Calendar, BellRing, UserCheck } from "lucide-react";
 
 const services = [
   {
@@ -31,7 +31,7 @@ const services = [
     desc: "Automatically re-engage dormant patients with personalized outreach.",
     stat: "Reactivate past patients",
   },
-]
+];
 
 export function ServicesSection() {
   return (
@@ -42,11 +42,11 @@ export function ServicesSection() {
             Core Services
           </span>
           <h2 className="mt-3 font-serif text-2xl sm:text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">
-            Everything your med spa needs to{" "}
+            Everything your business needs to{" "}
             <span className="text-teal">fill every slot</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg leading-relaxed text-muted-foreground text-pretty">
-            Revelt is a complete AI automation system — not just a chatbot.
+            REVELT is a complete AI automation system — not just a chatbot.
             Every touchpoint in the patient journey is handled automatically.
           </p>
         </div>
@@ -74,5 +74,5 @@ export function ServicesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
