@@ -18,15 +18,15 @@ export function AboutSection() {
     <section id="about" className="py-16 sm:py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-xs font-semibold uppercase tracking-widest text-teal">
+          {/* <span className="text-xs font-semibold uppercase tracking-widest text-teal">
             About REVELT
-          </span>
+          </span> */}
           <h2 className="mt-3 font-serif text-2xl sm:text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">
-            Helping Businesses Build Businesses That Keep Working
+            Helping You Build a Business That Keeps Working
           </h2>
           <p className="mt-4 text-base sm:text-lg leading-relaxed text-muted-foreground text-pretty">
             Running a business is demanding — clients, staff, marketing,
-            scheduling, follow-ups — all while trying to grow.
+            scheduling, and follow-ups — even as you try to grow.
           </p>
         </div>
 

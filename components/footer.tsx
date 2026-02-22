@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -7,9 +9,16 @@ export function Footer() {
         <div className="flex flex-col items-center gap-6 text-center">
           <a
             href="#"
-            className="text-lg font-bold tracking-tight text-foreground"
+            className="inline-flex items-center justify-center"
+            aria-label="REVELT home"
           >
-            REVELT
+            <Image
+              src="/logo_long.jpeg"
+              alt="REVELT"
+              width={140}
+              height={40}
+              className="h-9 w-auto object-contain"
+            />
           </a>
           <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
             Instant replies. Smart follow-ups. More booked clients. Less stress.

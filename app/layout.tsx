@@ -18,6 +18,16 @@ export const metadata: Metadata = {
   description:
     "AI-powered systems that capture, convert, and book more clients automatically. Ensure your business never misses another opportunity.",
   generator: "v0.app",
+  icons: {
+    icon: [
+      { url: "/web-app-manifest-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/web-app-manifest-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/web-app-manifest-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/web-app-manifest-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+  },
 };
 
 export const viewport: Viewport = {

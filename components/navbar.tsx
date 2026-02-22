@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -19,9 +20,20 @@ export function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
         <a
           href="#"
-          className="text-xl font-bold tracking-tight text-foreground"
+          className="flex items-center gap-2 shrink-0"
+          aria-label="REVELT home"
         >
-          REVELT
+          <Image
+            src="/web-app-manifest-192x192.png"
+            alt=""
+            width={32}
+            height={32}
+            className="h-8 w-8 object-contain"
+            priority
+          />
+          <span className="text-xl font-bold tracking-tight text-foreground">
+            REVELT
+          </span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
