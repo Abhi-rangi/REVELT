@@ -84,7 +84,7 @@ export function AboutSection() {
             </h3>
             <p className="mt-4 text-sm italic leading-relaxed text-muted-foreground">
               {'"'}REVELT was built during one of the busiest seasons of my life
-              — raising kids, building product, no pause button. Messages get
+              — raising kids, building products, no pause button. Messages get
               missed; follow-ups get delayed. Not because you don{"'"}t care —
               because you{"'"}re doing too much. I built REVELT so your business
               keeps working for you, not the other way around.{'"'}
@@ -132,7 +132,7 @@ export function AboutSection() {
           <div className="rounded-xl border border-teal/20 bg-card p-6 sm:p-8">
             <h3 className="flex items-center gap-2 font-serif text-lg font-bold text-foreground">
               <Check className="h-5 w-5 text-teal" />
-              REVELT Is a Good Fit If You:
+              REVELT is a Good Fit If You:
             </h3>
             <ul className="mt-4 flex flex-col gap-3">
               {goodFit.map((item) => (
