@@ -4,6 +4,7 @@
  * Purpose: "Get More Bookings" CTA from hero
  */
 
+import { submitContactForm } from "@/const";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
@@ -12,15 +13,25 @@ import { toast } from "sonner";
 export default function SignupSection() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !email.includes("@")) {
       toast.error("Please enter a valid email address.");
       return;
     }
-    setSubmitted(true);
-    toast.success("You're on the list! We'll be in touch soon.");
+    setLoading(true);
+    try {
+      await submitContactForm({ type: "signup", email });
+      setSubmitted(true);
+      toast.success("You're on the list! We'll be in touch soon.");
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "Something went wrong. Please try again.";
+      toast.error(message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -66,6 +77,7 @@ export default function SignupSection() {
               />
               <Button
                 type="submit"
+                disabled={loading}
                 className="bg-primary text-primary-foreground hover:opacity-90 font-semibold px-6 h-12 whitespace-nowrap"
                 style={{ fontFamily: "var(--font-body)" }}
               >

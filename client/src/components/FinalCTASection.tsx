@@ -5,6 +5,7 @@
  * Includes: "No pressure/No obligation" and "Limited monthly onboarding spots"
  */
 
+import { submitContactForm } from "@/const";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Clock, ArrowRight } from "lucide-react";
@@ -20,15 +21,25 @@ const demoPoints = [
 export default function FinalCTASection() {
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", spa: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email) {
       toast.error("Please fill in your name and email.");
       return;
     }
-    setSubmitted(true);
-    toast.success("Demo request received! We'll be in touch within 24 hours.");
+    setLoading(true);
+    try {
+      await submitContactForm({ type: "demo", ...formData });
+      setSubmitted(true);
+      toast.success("Demo request received! We'll be in touch within 24 hours.");
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "Something went wrong. Please try again.";
+      toast.error(message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -239,6 +250,7 @@ export default function FinalCTASection() {
                     <Button
                       type="submit"
                       size="lg"
+                      disabled={loading}
                       className="w-full h-13 text-base font-bold mt-2 bg-primary text-primary-foreground hover:opacity-90 shadow-lg pulse-cta"
                       style={{ fontFamily: "var(--font-body)" }}
                     >
